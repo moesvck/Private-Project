@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+    <script type="text/javascript">
+    function tampiluser(){
+        var user=document.forms["frmlogin"]["txtuser"].value;
+        alert("Halo user anda " + user + " yah ?");
+    }
+    function hitung(){
+        var panjang=document.forms["frmpersegipanjang"]["txtpanjang"].value;
+        var lebar=document.forms["frmpersegipanjang"]["txtlebar"].value;
+        var luas=(var panjang * var lebar);
+        alert("Luas Persegi panjang "+ luas + "ya");
+    }
+    </script>
+</head>
+<body>
+    <form  name="frmlogin" onsubmit="tampiluser()">
+        <label for="txtuser">Username</label><br>
+        <input type="text" name="txtuser">
+        <input type="submit" value="Baca">
+    </form>
+    
+    <form name="frmpersegipanjang" onsubmit="hitung()">
+        <label for="txtpanjang">Panjang</label><br>
+        <input type="number" name="txtpanjang"><br>
+        <label for="txtlebar">Lebar</label><br>
+        <input type="number" name="txtlebar"><br>
+        <input type="submit" value="Hitung">
+    </form>
+        
+        <label for="txtsisi">sisi</label><br>
+        <input type="number" id="txtsisi"><br>
+        <label for="txtluas">luas</label><br>
+        <input type="text" id="txtluas"><br>
+        <button onclick="hitungpersegi()">hitung</button>
+    
+    <script>
+        function hitungpersegi(){
+            sisi = document.getElementById("txtsisi").value;
+            document.getElementById("txtluas").value = sisi*sisi;
+        }
+    
+    
+    </script>
+</body>
+
+</html>
