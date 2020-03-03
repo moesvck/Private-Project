@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Belajar Logika</title>
+    <script>
+        function kondisional() {
+            var umur = 11;
+            if (umur > 17) {
+                alert("umur anda belum cukup untuk memiliki KTP");
+            } else {
+                alert("SELAMAT ANDA SUDAH TUA");
+            }
+        }
+
+        function cekLopping() {
+            var nilai = document.getElementById("txtLopp").value;
+            for (i = 0; i < nilai;) {
+                alert(i);
+                i++;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <label for="nama">Input Masukan</label><br>
+        <input type="tex" id="txtcoba"><br>
+        <button onclick="cek()">SHOW</button>
+    </form><br><br><br>
+
+    <label for="txtsisi">sisi</label><br>
+    <input type="number" id="txtsisi"><br>
+    <label for="txtluas">luas</label><br>
+    <input type="text" id="txtluas"><br>
+    <button onclick="hitungpersegi()">hitung</button>
+    <br><br><br>
+
+
+    <form name="menjumlah" onsubmit="penjumlahan">
+        <label for="pertama">Nilai pertama</label><br>
+        <input type="number" id="nilaipertama"><br>
+        <!onkeyup="sum();">
+            <label for="kedua">Nilai kedua</label><br>
+            <input type="number" id="nilaikedua"><br>
+            <button onclick="penjumlahan()">hitung</button>
+    </form>
+    <br><br><br>
+
+    <button onclick="kondisional()">KONDISIONAL</button><br><br><br>
+
+    <form>
+        <label for="looping">Input Jumlah Lopping</label><br>
+        <input type="numb" id="txtLopp"><br>
+        <button onclick="cekLopping()">SHOW</button>
+    </form><br><br><br>
+
+    <script>
+        function cek() {
+            var yuhu = document.getElementById("txtcoba").value;
+            alert("Yang anda input adalah " + yuhu);
+        }
+
+        function hitungpersegi() {
+            sisi = document.getElementById("txtsisi").value;
+            document.getElementById("txtluas").value = sisi * sisi;
+            //a=sisi*sisi;
+            //alert(a);
+        }
+
+        function penjumlahan() {
+            var NPertama = document.getElementById("nilaipertama").value; //var NPertama = document.forms["menjumlah"]["nilaipertama"].value;
+            var Nkedua = document.getElementById("nilaikedua").value;
+            var hasil = parseFloat(NPertama) + parseFloat(Nkedua);
+            alert(hasil);
+        }
+    </script>
+</body>
+
+</html>
