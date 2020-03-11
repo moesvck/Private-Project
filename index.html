@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Boostrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1..js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        #skill {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <center>
+                <h1>Hello World</h1>
+            </center>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12" style="padding-left:10px; padding-right:10px">
+                <form class="thumbnail">
+                    <center>
+                        <h2>Input Data Diri</h2>
+                    </center>
+                    <div class="form-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">Input nama anda tanpa gelar.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">NIP</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <label>Jenis Kelamin</label><br>
+                    <div class="form-check ">
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option1" checked>
+                        <label class="form-check-label">
+                            Pria
+                        </label>&nbsp;
+                        <input class="form-check-input" type="radio" name="exampleRadios" value="option2" checked>
+                        <label class="form-check-label">
+                            wanita
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Example select</label>
+                        <select class="form-control">
+                            <option>Islam</option>
+                            <option>Kristen</option>
+                            <option>Katolik</option>
+                            <option>Hindu</option>
+                            <option>Budha</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Alamat</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <form></form>
+            </div>
+            <div class="col-md-6 col-sm-12" style="padding-left:10px; padding-right:10px">
+                <div class="thumbnail">
+                    <center>
+                        <h2>Keluarga</h2>
+                    </center>
+                    <table class="table table-striped">
+                        <thead class="">
+                            <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Status</th>
+                                <th>Pekerjaan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Budi</td>
+                                <td>Ayah</td>
+                                <td>Wiraswasta</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Wanti</td>
+                                <td>Ibu</td>
+                                <td>Ibu Rumah Tangga</td>
+                            </tr>
+                            <tr>
+                                <th>3</th>
+                                <td>Susi</td>
+                                <td>Adik</td>
+                                <td>Mahasiswa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class=" col-md-6" style="padding-left:10px; padding-right:10px">
+                    <center>
+                        <h2>Academy</h2>
+                    </center>
+                    <ul class="list-group">
+                        <li class="list-group-item list-group-item-danger">
+                            Biologi
+                            <span class="badge badge-primary badge-pill">89</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-success">
+                            Matematika
+                            <span class="badge badge-primary badge-pill">75</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-warning">
+                            Fisika
+                            <span class="badge badge-primary badge-pill">60</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-info">
+                            Kimia
+                            <span class="badge badge-warning badge-pill">88</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" col-md-6" style="padding-left:10px; padding-right:10px" id="skill">
+                    <center>
+                        <h2>Skill</h2>
+                    </center>
+                    <label>Ms. Word</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                    <label>Ms. Exel</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                    </div>
+                    <label>Photoshop</label>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
