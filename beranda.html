@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        p.text {
+            font-size: 16px;
+        }
+
+        img.logo {
+            width: 20px;
+            float: left;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        label {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a href="Beranda.html" class="navbar-brand"><img src="img/potensiutama.jpg" class="logo">Universitas Potensi Utama</a></div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="sambutan.html">Sambutan</a></li>
+                    <li><a href="sejarah.html">Sejarah</a></li>
+                    <li><a href="visimisi.html">Visi Misi</a></li>
+                    <li><a href="daftar.html">Daftar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+
+            <h1>Selamat Datang</h1>
+            <h>Selamat datang di Universitas Potensi Utama, Seluruh informasi mengenai Universitas Potensi Utama dapat ditemukan pada website Universitas Potensi Utama. Pada tahun 2014 ini Universitas Potensi Utama telah menyediakan Proses Pembelajaran Online. Universitas Potensi Utama akan terus melakukan Terobosan baru dalam bidang ICT dengan memunculkan ide-ide baru.</h><br><br>
+            <div><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Baca Sekarang
+                </button></div>
+            <div class="modal" id="exampleModal">
+                <div class="container">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">Pengumuman<a href="" class="close" data-dismiss="modal"><span>&times;</span></a>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text">Untuk Pendaftaran mahasiswa Baru akan dibuka pada bulan September 2020. Silahkan daftarkan email anda untuk mendapatkan update lebih lanjut.</p>
+                                <input type="email" class="form-control" name="email" placeholder="Masukkan email anda">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-block btn-warning">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/sambutan.jpg">
+                    <br>
+                    <p>SAMBUTAN</p>
+                    <small>Pendidikan yang berkualitas tidak hanya dicirikan ilmu pengetahuan dan teknologi (IPTEK), tetapi juga dalam pemahaman serta pengalaman nilai-nilai keimanan dan ketakwaan....</small><br><br>
+                    <div><a href="sambutan.html" class="btn btn-info">Baca</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/sejarah.jpg"><br>
+                    <p>Sejarah</p>
+                    <small>Ketika sebuah perusahaan membutuhkan tenaga kerja terampil, cekatan dan bersedia kerja keras dan tekun, ternyata tak gampang memperolehnya. Apalagi yang menguasai teknik komputer, administrasi dan akuntansi maupun bahasa asing yang memadai....</small><br><br>
+                    <div>
+                        <a href="sejarah.html" class="btn btn-info">Baca</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/visimisi.jpg"><br>
+                    <p>Visi Misi</p>
+                    <small>Menjadi lembaga pendidikan tinggi yang menyelenggarakan proses pendidikan yang unggul serta disesuaikan dengan kebutuhan dunia kerja.
+                        Menghasilkan riset-riset yang mampu melatih pemikiran kritis serta menjawab permasalahan industri di wilayah regional....</small><br><br>
+                    <div><a href="visimisi.html" class="btn btn-info">Baca</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body></html>
